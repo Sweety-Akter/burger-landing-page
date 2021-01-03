@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Redressed', cursive;
+}
+.main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(46,46,46,0.5),rgba(46,46,46,0.5)),url(../img/burger-bg.jpg);
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo h2{
+    font-size: 45px;
+    font-family: 'Redressed', cursive;
+    color: rgb(80,80,80);
+}
+.nav-logo span{
+    color: #FFC312;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 25px;
+}
+.nav-links ul li a{
+    color: #FFC312;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Redressed', cursive;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FFC312;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-btn{
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Redressed', cursive;
+    color: rgb(80,80,80);
+    background-color: #FFC312;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.nav-links .nav-btn{
+    float: right;
+}
+.nav-btn:hover{
+    border: 1px solid #FFC312;
+    color: #FFC312;
+    border-radius: 10px;
+    background: black;
+}
+.banner-title{
+    margin: 80px 130px;
+    color: rgb(80,80,80);
+    font-family: 'Redressed', cursive;
+    
+}
+.banner-title h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+.banner-title span{
+    color: #FFC312;
+}
+.vertical-bar{
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+.search-icon .fas{
+    margin: 45px 23px;
+    color: #FFC312;
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+}
+.social-icons{
+    height: 35%;
+    width: 80px;
+    background-color: #FFC312;
+    text-align: center;
+    padding-top: 27%;
+    position: absolute;
+    bottom: 0;
+}
+.social-icons .fab{
+    display: block;
+    margin: 10px 23px;
+    padding: 8px;
+    border: 1px solid rgb(80,80,80);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.social-icons i:hover{
+    background-color: rgb(80,80,80);
+    color: #FFC312;
+}
